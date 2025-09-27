@@ -14,6 +14,7 @@ bin/
 obj/
 Debug/
 Release/
+output/
 
 # IDE相关
 .vscode/
