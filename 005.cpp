@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <windows.h>
 using namespace std;
 
 int minCostPath(const vector<vector<int>>& grid, int x, int y) {
@@ -29,8 +30,13 @@ int minCostPath(const vector<vector<int>>& grid, int x, int y) {
 }
 
 int main() {
+    // 设置控制台输入、输出编码为 UTF-8
+    SetConsoleOutputCP(CP_UTF8);
+    SetConsoleCP(CP_UTF8);
     int n;
     cout << "请输入矩阵大小 n: ";
+    // cout << "please input the size of matrix n: ";
+
     cin >> n;
     vector<vector<int>> grid(n, vector<int>(n));
     cout << "请输入 " << n << "x" << n << " 的矩阵:" << endl;
